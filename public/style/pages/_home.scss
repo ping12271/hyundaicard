@@ -12,7 +12,7 @@
   .content-box.first {
     display: flex;
     .login {
-      width: 290px;
+      width: 344px;
       height: 692px;
       background-color: #888;
       color: #fff;
@@ -45,7 +45,7 @@
         }
       }
       .btn-menu {
-        width: 230px;
+        width: 240px;
         background-color: #fff;
         border-radius: 3px;
         height: 32px;
@@ -72,7 +72,7 @@
       .search {
         display: flex;
         margin-bottom: 50px;
-        width: 230px;
+        width: 240px;
         a {
           display: flex;
           justify-content: flex-start;
@@ -87,7 +87,7 @@
         }
       }
       img {
-        width: 60%;
+        width: 50%;
         box-shadow: 5px 5px 15px rgba(0,0,0, .3);
       }
       .desc {
@@ -115,7 +115,7 @@
     }
 
     .card-guide {
-      width: 585px;
+      width: 691px;
       height: 692px;
       border: 1px solid #d5d3d3;
       .card-guide-item {
@@ -192,9 +192,6 @@
           &.x{
             border-right: none;
           }
-          &.m {
-
-          }
           a {
             p {
               margin-top: 15px;
@@ -207,7 +204,7 @@
       }
     }
     .bank-guide {
-      width: 295px;
+      width: 326px;
       border: 1px solid #d5d3d3;
       border-left: none;
       padding: 0 25px;
@@ -264,14 +261,13 @@
       border: 1px solid #d5d3d3;
       border-top: none;
       &.culture {
-        width: 290px;
+        width: 333px;
       }
       &.service-center {
-        width: 292px;
+        width: 345px;
         border-left: none;
         border-right: none;
         .service-box {
-          width: 291px;
           display: flex;
           ul.link {
             li {
@@ -310,11 +306,11 @@
         }
       }
       &.digital-project {
-        width: 292px;
+        width: 344px;
         border-right: none;
       }
       &.event {
-        width: 296px;
+        width: 326px;
       }
       //seconds-area 공통 slick
       .slick-dots {

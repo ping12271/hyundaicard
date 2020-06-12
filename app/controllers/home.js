@@ -9,6 +9,12 @@ router.get('/', async function(req, res) {
     })
 });
 
+router.get('/culture&life', async function(req, res) {
+    res.render('culture&life', {
+        title: 'culture&life',
+        description: 'culture&life'
+    })
+});
 
 module.exports = router;
 
