@@ -18,6 +18,32 @@ body {
     width: 1px;
     height: 1px;}
 
+//slick 슬라이드 공통요소
+.slideshow {
+    position: relative;
+    .slick-dots {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        li {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #ddd;
+            margin: 0 5px;
+            &.slick-active {
+                background: #08c;
+            }
+            button {
+                display: none;
+            }
+        }
+    }
+}
+
 .pull-left{float:left;}
 .pull-right{float:right;}
 .por{position:relative;}

@@ -20,7 +20,7 @@ var hyundaicard = {
     },
 
     singleSlideshow: function () {
-        $('.bank-slideshow, .culture-slideshow, .digital-slideshow, .event-slideshow, .notice-slideshow, .nav-slideshow').slick({
+        $('.bank-slideshow, .culture-slideshow, .digital-slideshow, .event-slideshow, .notice-slideshow').slick({
             autoplay: true,
             arrows: false,
             dots: true,
@@ -28,8 +28,10 @@ var hyundaicard = {
     },
 
     fadeSlideshow: function () {
-        $('.visual-slideshow').slick({
+        $('.nav-slideshow, .visual-slideshow').slick({
+            autoplay: true,
             dots: true,
+            arrows: false,
             infinite: true,
             speed: 500,
             fade: true,

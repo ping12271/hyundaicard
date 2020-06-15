@@ -216,6 +216,9 @@
           bottom: -20px;
         }
         .item {
+          img {
+            width: 100%;
+          }
           p {
             padding-top: 10px;
             font-size: 13px;
@@ -256,65 +259,67 @@
   .content-box.seconds {
     display: flex;
     height: 308px;
-    .seconds-area {
-      padding: 37px 30px;
-      border: 1px solid #d5d3d3;
-      border-top: none;
-      &.culture {
-        width: 333px;
-      }
-      &.service-center {
-        width: 345px;
-        border-left: none;
-        border-right: none;
-        .service-box {
-          display: flex;
-          ul.link {
-            li {
-              background-color: rgba(147, 145, 145, 0.17);
-              border: 1px solid #fff;
-              a {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 10px 10px;
-                font-size: 13px;
-                color: #666;
-                &:hover {
-                  color: #0088cc;
-                }
+  }
+  .seconds-area {
+    padding: 37px 30px;
+    border: 1px solid #d5d3d3;
+    border-top: none;
+    &.culture {
+      width: 333px;
+    }
+    &.service-center {
+      width: 345px;
+      border-left: none;
+      border-right: none;
+      .service-box {
+        display: flex;
+        ul.link {
+          li {
+            background-color: rgba(147, 145, 145, 0.17);
+            border: 1px solid #fff;
+            a {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 10px 10px;
+              font-size: 13px;
+              color: #666;
+              &:hover {
+                color: #0088cc;
               }
             }
           }
         }
-        .desc-number {
-          padding-bottom: 10px;
-          line-height: 1.2;
-          border-bottom: 1px solid #d5d3d3;
-          p {
-            font-size: 20px;
-          }
-        }
+      }
+      .desc-number {
+        padding-bottom: 10px;
+        line-height: 1.2;
+        border-bottom: 1px solid #d5d3d3;
         p {
-          padding-top: 10px;
-          line-height: 1.5;
-          font-size: 13px;
-          a {
-            color: #0088cc;
-            border-bottom: 1px solid #0088cc;
-          }
+          font-size: 20px;
         }
       }
-      &.digital-project {
-        width: 344px;
-        border-right: none;
+      p {
+        padding-top: 10px;
+        line-height: 1.5;
+        font-size: 13px;
+        a {
+          color: #0088cc;
+          border-bottom: 1px solid #0088cc;
+        }
       }
-      &.event {
-        width: 326px;
-      }
-      //seconds-area 공통 slick
+    }
+    &.digital-project {
+      width: 344px;
+      border-right: none;
+    }
+    &.event {
+      width: 326px;
+    }
+
+    //seconds-area 공통 slick
       .slick-dots {
-        bottom: -10px;
+        bottom: -20px;
       }
       .item {
         cursor: pointer;
@@ -329,7 +334,6 @@
         }
       }
     }
-  }
 
   .notice-box {
     position: relative;
@@ -368,31 +372,6 @@
           height: 10px;
           margin: 0 10px;
         }
-      }
-    }
-  }
-}
-
-
-
-
-//slick first,seconds box 슬라이드 공통요소
-.slideshow {
-  .slick-dots {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    li {
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      background: #ddd;
-      margin: 0 5px;
-      &.slick-active {
-        background: #08c;
-      }
-      button {
-        display: none;
       }
     }
   }
