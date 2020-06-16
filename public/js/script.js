@@ -9,6 +9,7 @@ var hyundaicard = {
         hyundaicard.navSlideshow()
         hyundaicard.backTop()
         hyundaicard.getScroll()
+        hyundaicard.toggleSlidemenu()
     },
 
     threeSlideshow: function () {
@@ -67,6 +68,7 @@ var hyundaicard = {
             const scrollTop = $(window).scrollTop();
             const headerHeight = $('#header').innerHeight();
             const visualHeight = $('.visual').innerHeight();
+            const faqboardHeight = $('.faq-board').innerHeight();
 
             if(scrollTop > 50) {
                 $('html').addClass('show-backtop')
@@ -74,10 +76,11 @@ var hyundaicard = {
                 $('html').removeClass('show-backtop');
             }
 
+
             if(scrollTop > headerHeight) {
                 $('html').addClass('show-title-b')
             } else {
-                $('html').removeClass('show-title-b')
+                $('html').removeClass('show-title-b');
             }
 
             if(scrollTop > visualHeight) {
@@ -85,6 +88,7 @@ var hyundaicard = {
             } else {
                 $('html').removeClass('show-title-w');
             }
+
 
             if(scrollTop > 5) {
                 $('html').addClass('show-bar')
@@ -100,6 +104,13 @@ var hyundaicard = {
             $('html, body').animate({
                 scrollTop:0
             },400)
+        })
+    },
+
+    toggleSlidemenu: function () {
+        $('.faq-board li').on('click', function () {
+            $(this).find('.answer').slideToggle();
+            $(this).find('.icon').toggleClass('show');
         })
     }
 

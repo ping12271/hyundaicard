@@ -1328,46 +1328,49 @@ body {
 #wrap .visual .visual-slideshow .img7 {
   background-image: url("/public/images/visual_life_main_6.jpg");
 }
-#wrap .container .culturelife-section {
+#wrap .container {
+  width: 1056px;
+}
+#wrap .container .culturelife {
   padding-top: 50px;
 }
-#wrap .container .culturelife-section.design {
+#wrap .container .culturelife.design {
   padding-bottom: 70px;
 }
-#wrap .container .culturelife-section .title {
+#wrap .container .culturelife .title {
   text-align: center;
   margin-bottom: 20px;
 }
-#wrap .container .culturelife-section .title h3 {
+#wrap .container .culturelife .title h3 {
   font-size: 16px;
   margin-bottom: 20px;
 }
-#wrap .container .culturelife-section .title p {
+#wrap .container .culturelife .title p {
   font-size: 21px;
 }
-#wrap .container .culturelife-section ul {
+#wrap .container .culturelife ul {
   display: flex;
   flex-wrap: wrap;
 }
-#wrap .container .culturelife-section ul li {
+#wrap .container .culturelife ul li {
   flex: 1 1 33.3333%;
   max-width: 33.3333%;
   padding: 15px;
 }
-#wrap .container .culturelife-section .item img {
+#wrap .container .culturelife .item img {
   width: 328px;
 }
-#wrap .container .culturelife-section .item a p.tit {
+#wrap .container .culturelife .item a p.tit {
   font-size: 15px;
   color: #000;
   margin-top: 15px;
 }
-#wrap .container .culturelife-section .item a p {
+#wrap .container .culturelife .item a p {
   color: #777;
   font-size: 13px;
   margin-top: 10px;
 }
-#wrap .container .culturelife-section .item a:hover .tit {
+#wrap .container .culturelife .item a:hover .tit {
   color: #0088cc;
 }
 
@@ -1391,6 +1394,7 @@ body {
   transition: 0.3s;
 }
 #wrap .nav-bar .container {
+  width: 1056px;
   display: flex;
   align-items: center;
   height: 50px;
@@ -1457,7 +1461,7 @@ body {
 }
 #wrap .cooking-content .container .intro .desc, #wrap .cooking-content .container .guide .desc {
   display: flex;
-  padding: 20px 70px;
+  padding: 20px 0;
   border-bottom: 1px solid #d5d3d3;
 }
 #wrap .cooking-content .container .intro .desc p.tit, #wrap .cooking-content .container .guide .desc p.tit {
@@ -1508,6 +1512,357 @@ body {
 }
 #wrap .cooking-content .banner a:hover {
   border-bottom: 1px solid #0088cc;
+}
+
+#wrap .customer-contents .faq-board {
+  position: relative;
+  background-color: #5698e0;
+}
+#wrap .customer-contents .faq-board .title {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.83);
+  text-align: center;
+  color: #fff;
+}
+.show-title-b #wrap .customer-contents .faq-board .title {
+  position: fixed;
+  transition: 0.5s;
+}
+.show-title-w #wrap .customer-contents .faq-board .title {
+  background-color: rgba(255, 255, 255, 0.83);
+  color: #000;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+#wrap .customer-contents .faq-board .title h1 {
+  font-size: 20px;
+  line-height: 50px;
+}
+#wrap .customer-contents .faq-board .container {
+  width: 1056px;
+  padding: 100px 0;
+}
+#wrap .customer-contents .faq-board .container .desc {
+  color: #fff;
+}
+#wrap .customer-contents .faq-board .container .desc h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+#wrap .customer-contents .faq-board .container .desc h2 a {
+  color: #fff;
+  font-size: 21px;
+}
+#wrap .customer-contents .faq-board .container .desc h2 a:hover {
+  border-bottom: 1px solid #fff;
+}
+#wrap .customer-contents .faq-board .container .search {
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-40%);
+  display: flex;
+  justify-content: center;
+}
+#wrap .customer-contents .faq-board .container .search input {
+  width: 420px;
+  height: 40px;
+  padding: 10px;
+}
+#wrap .customer-contents .faq-board .container .search .btn {
+  width: 80px;
+  height: 40px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 13px;
+  margin-left: 20px;
+}
+#wrap .customer-contents .faq-board .container ul.faq-items {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#wrap .customer-contents .faq-board .container ul.faq-items li {
+  flex: 1 1 20%;
+  padding: 5px;
+}
+#wrap .customer-contents .faq-board .container ul.faq-items li .item {
+  height: 130px;
+  background-color: #fff;
+  padding: 20px 30px;
+}
+#wrap .customer-contents .faq-board .container ul.faq-items li .item p.number {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 7px;
+}
+#wrap .customer-contents .faq-board .container ul.faq-items li .item p {
+  font-size: 15px;
+  color: #000;
+  line-height: 1.5;
+}
+#wrap .customer-contents .faq-board .container ul.faq-items li .item p em {
+  color: #0088cc;
+}
+#wrap .customer-contents .faq-board .container ul.faq-items li .item:hover {
+  background-color: #5698e0;
+  border: 1px solid #fff;
+  transition: 0.3s;
+}
+#wrap .customer-contents .faq-board .container ul.faq-items li .item:hover p, #wrap .customer-contents .faq-board .container ul.faq-items li .item:hover em {
+  color: #fff;
+}
+#wrap .customer-contents .question {
+  padding-top: 50px;
+}
+#wrap .customer-contents .question .container h2 a {
+  margin-bottom: 20px;
+  font-size: 21px;
+}
+#wrap .customer-contents .question .container h2 a:hover {
+  color: #0088cc;
+}
+#wrap .customer-contents .question .container ul {
+  display: flex;
+}
+#wrap .customer-contents .question .container ul li {
+  flex: 1 1 25%;
+  padding: 20px;
+}
+#wrap .customer-contents .question .container ul li .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#wrap .customer-contents .question .container ul li .item i {
+  font-size: 45px;
+  color: #888;
+}
+#wrap .customer-contents .question .container ul li .item a {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+  font-size: 15px;
+}
+#wrap .customer-contents .question .container ul li .item a:hover {
+  color: #0088cc;
+  border-bottom: 1px solid #0088cc;
+}
+#wrap .customer-contents .question .container ul li .item p {
+  line-height: 1.5;
+  font-size: 13px;
+  color: #888;
+}
+#wrap .customer-contents .customer {
+  padding-top: 50px;
+}
+#wrap .customer-contents .customer h3 {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+#wrap .customer-contents .customer ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -13px;
+}
+#wrap .customer-contents .customer ul li {
+  flex: 1 1 25%;
+  max-width: 25%;
+  padding: 13px;
+}
+#wrap .customer-contents .customer ul li .item {
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 15px;
+}
+#wrap .customer-contents .customer ul li .item:hover {
+  background-color: #1e75d6;
+  color: #fff;
+  transition: 0.3s;
+}
+#wrap .customer-contents .customer ul li .item:hover i, #wrap .customer-contents .customer ul li .item:hover h2, #wrap .customer-contents .customer ul li .item:hover p {
+  color: #fff;
+}
+#wrap .customer-contents .customer ul li .item i {
+  font-size: 45px;
+  color: #888;
+}
+#wrap .customer-contents .customer ul li .item h2 {
+  font-size: 21px;
+  margin: 15px 0;
+}
+#wrap .customer-contents .customer ul li .item p {
+  font-size: 13px;
+  line-height: 1.8;
+  color: #888;
+}
+#wrap .customer-contents .news {
+  padding: 50px 0;
+}
+#wrap .customer-contents .news .container h2 {
+  margin-bottom: 20px;
+}
+#wrap .customer-contents .news .container h2 a {
+  font-size: 21px;
+  margin: 15px 0;
+}
+#wrap .customer-contents .news .container h2 a:hover {
+  color: #0088cc;
+}
+#wrap .customer-contents .news .container ul {
+  border-top: 2px solid #555;
+}
+#wrap .customer-contents .news .container ul li {
+  border-bottom: 1px solid #d5d3d3;
+}
+#wrap .customer-contents .news .container ul li a {
+  height: 53px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 70px;
+}
+#wrap .customer-contents .news-bar {
+  margin-top: 70px;
+  padding: 0 20px;
+  background-color: #1e75d6;
+}
+#wrap .customer-contents .news-bar a {
+  height: 40px;
+  color: #fff;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#wrap .customer-faq {
+  position: relative;
+}
+#wrap .customer-faq .title {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#wrap .customer-faq .title h1 {
+  font-size: 30px;
+}
+#wrap .customer-faq .title .search {
+  display: flex;
+  margin-top: 30px;
+}
+#wrap .customer-faq .title .search input {
+  width: 400px;
+}
+#wrap .customer-faq .title .search .btn {
+  width: 80px;
+  height: 40px;
+  background-color: #1e75d6;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+#wrap .customer-faq .faq-menu {
+  margin-top: 30px;
+}
+#wrap .customer-faq .faq-menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #d5d3d3;
+  border-bottom: none;
+  border-left: none;
+}
+#wrap .customer-faq .faq-menu ul li {
+  height: 48px;
+  flex: 1 1 20%;
+  max-width: 20%;
+}
+#wrap .customer-faq .faq-menu ul li a {
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #d5d3d3;
+  border-top: none;
+  border-right: none;
+}
+#wrap .customer-faq .faq-menu ul li a:hover {
+  background-color: #fafafa;
+  color: #0088cc;
+}
+#wrap .customer-faq .faq-menu .links {
+  margin: 20px 0;
+}
+#wrap .customer-faq .faq-menu .links a {
+  font-size: 15px;
+  margin-right: 20px;
+}
+#wrap .customer-faq .faq-menu .links a:hover {
+  color: #0088cc;
+  border-bottom: 1px solid #0088cc;
+}
+#wrap .customer-faq .faq-board {
+  margin: 50px 0;
+}
+#wrap .customer-faq .faq-board h2 {
+  font-size: 21px;
+  margin-bottom: 15px;
+}
+#wrap .customer-faq .faq-board ul {
+  border-top: 2px solid #666;
+}
+#wrap .customer-faq .faq-board ul li {
+  border-bottom: 1px solid #d5d3d3;
+}
+#wrap .customer-faq .faq-board ul li .answer {
+  background-color: #fafafa;
+  padding: 20px 50px;
+  display: none;
+  line-height: 1.5;
+}
+#wrap .customer-faq .faq-board ul li .que {
+  height: 53px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+#wrap .customer-faq .faq-board ul li .que .icon {
+  border: 1px solid #d5d3d3;
+  padding: 2px 4px;
+}
+#wrap .customer-faq .faq-board ul li .que .icon i {
+  color: #666;
+  font-weight: 600;
+}
+#wrap .customer-faq .faq-board ul li .que .icon.show .fa-angle-down {
+  display: block;
+  color: #0088cc;
+}
+#wrap .customer-faq .faq-board ul li .que .icon.show .fa-angle-up {
+  display: none;
+}
+#wrap .customer-faq .faq-board ul li .que .fa-angle-down {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

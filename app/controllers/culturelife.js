@@ -11,8 +11,8 @@ router.get('/culturelife', async function(req, res) {
 
 router.get('/detail', async function(req, res) {
     res.render('culturelife/detail', {
-        title: 'culture&life',
-        description: 'culturelife'
+        title: 'detail',
+        description: 'detail'
     })
 });
 
