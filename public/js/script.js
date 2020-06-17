@@ -3,13 +3,14 @@ $(function () {
 })
 var hyundaicard = {
     init: function () {
-        hyundaicard.threeSlideshow()
-        hyundaicard.singleSlideshow()
-        hyundaicard.fadeSlideshow()
-        hyundaicard.navSlideshow()
-        hyundaicard.backTop()
-        hyundaicard.getScroll()
-        hyundaicard.toggleSlidemenu()
+        hyundaicard.threeSlideshow();
+        hyundaicard.singleSlideshow();
+        hyundaicard.fadeSlideshow();
+        hyundaicard.navSlideshow();
+        hyundaicard.getScroll();
+        hyundaicard.toggleSlidemenu();
+        hyundaicard.handleInfo();
+        hyundaicard.backTop();
     },
 
     threeSlideshow: function () {
@@ -61,14 +62,15 @@ var hyundaicard = {
 
     },
 
-
-
     getScroll: function () {
         $(window).on('scroll', function () {
             const scrollTop = $(window).scrollTop();
-            const headerHeight = $('#header').innerHeight();
-            const visualHeight = $('.visual').innerHeight();
-            const faqboardHeight = $('.faq-board').innerHeight();
+
+            if(scrollTop > 5) {
+                $('html').addClass('get-scroll')
+            } else {
+                $('html').removeClass('get-scroll');
+            }
 
             if(scrollTop > 50) {
                 $('html').addClass('show-backtop')
@@ -77,28 +79,22 @@ var hyundaicard = {
             }
 
 
-            if(scrollTop > headerHeight) {
-                $('html').addClass('show-title-b')
-            } else {
-                $('html').removeClass('show-title-b');
-            }
-
-            if(scrollTop > visualHeight) {
-                $('html').addClass('show-title-w')
-            } else {
-                $('html').removeClass('show-title-w');
-            }
-
-
-            if(scrollTop > 5) {
-                $('html').addClass('show-bar')
-            } else {
-                $('html').removeClass('show-bar');
-            }
-
         })
+
     },
 
+    handleInfo: function () {
+        $(window).on('scroll', function () {
+            const scrollTop = $(window).scrollTop();
+            const offset = $('.title-trigger').offset();
+            const point = offset.top;
+            if (scrollTop > point) {
+                $('.page-title').addClass('on');
+            } else {
+                $('.page-title').removeClass('on');
+            }
+        });
+    },
     backTop: function () {
         $('.back-top').on('click', function () {
             $('html, body').animate({

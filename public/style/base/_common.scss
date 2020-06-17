@@ -10,6 +10,14 @@ body {
     margin: 0 auto;
     padding: 0 15px;
 }
+.container-sm {
+    width: 1056px;
+    margin: 0 auto;
+}
+
+.back-top {
+
+}
 
 .blind {position: absolute;
     overflow: hidden;
@@ -43,6 +51,7 @@ body {
         }
     }
 }
+
 
 .pull-left{float:left;}
 .pull-right{float:right;}

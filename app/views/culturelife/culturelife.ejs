@@ -4,14 +4,12 @@
     <%- include ../components/head %>
 </head>
 <body>
-<%- include ../components/nav %>
 <%- include('../components/header', {title: title, description: description}) %>
-
-<div id="wrap">
+<div class="page-title">
+    <h1><%= title %></h1>
+</div>
+<div class="culturelife-page-culturelife">
     <div class="visual">
-        <div class="title">
-            <h1>컬처·라이프스타일</h1>
-        </div>
         <div class="slideshow visual-slideshow">
             <div class="item img1">
                 <div class="desc text1">
@@ -34,7 +32,9 @@
                     </a>
                 </div>
             </div>
-            <a href="#!"><div class="item img4"></div></a>
+            <a href="#!">
+                <div class="item img4"></div>
+            </a>
             <div class="item img5">
                 <div class="desc text5">
                     <h2>현대카드 컬처프로젝트 28<br>The Weeknd</h2>
@@ -58,9 +58,8 @@
             </div>
         </div>
     </div>
-
-    <div class="container">
-        <section class="culturelife culture">
+    <section class="culturelife culture title-trigger">
+        <div class="container-sm">
             <div class="title">
                 <h3>Culture</h3>
                 <p>현대카드이기에 가능한 독보적 문화행사</p>
@@ -103,9 +102,10 @@
                     </div>
                 </li>
             </ul>
-        </section>
-
-        <section class="culturelife space">
+        </div>
+    </section>
+    <section class="culturelife space">
+        <div class="container-sm">
             <div class="title">
                 <h3>Space</h3>
                 <p>현대카드가 제공하는 문화, 프리미엄 공간</p>
@@ -114,7 +114,7 @@
                 <li>
                     <div class="item">
                         <a href="/culturelife/detail">
-                        <img src="/public/images/@life_cookinglibrary.jpg" alt="">
+                            <img src="/public/images/@life_cookinglibrary.jpg" alt="">
                             <p class="tit">COOKING LIBRARY ></p>
                             <p>채움의 시간+영감의 공간</p>
                         </a>
@@ -175,9 +175,10 @@
                     </div>
                 </li>
             </ul>
-        </section>
-
-        <section class="culturelife life">
+        </div>
+    </section>
+    <section class="culturelife life">
+        <div class="container-sm">
             <div class="title">
                 <h3>Life</h3>
                 <p>특별하고 믿을 수 있는 Life Style 제안</p>
@@ -220,9 +221,10 @@
                     </div>
                 </li>
             </ul>
-        </section>
-
-        <section class="culturelife design">
+        </div>
+    </section>
+    <section class="culturelife design">
+        <div class="container-sm">
             <div class="title">
                 <h3>Designed by Hyundai Card</h3>
                 <p>현대카드의 철학과 스타일을 담은 현대카드 디자인</p>
@@ -256,8 +258,8 @@
                     </div>
                 </li>
             </ul>
-        </section>
-    </div>
+        </div>
+    </section>
 </div>
 <div class="back-top"><i class="fa fa-chevron-up"></i></div>
 <%- include ../components/footer %>
